@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     height: 100vh;
 }
@@ -8,7 +11,7 @@ main {
     margin: 20px;
     height: 100%;
     text-align: center;
-    padding-top: 45%;
+    padding-top: 20%;
     
 }
 
@@ -19,19 +22,53 @@ h1, h2, p {
 }
 
 main > h2 {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .quiz {
     font-size: 40px;
-    margin-top: 30px;
+    margin-top: 30%;
 }
 
 button {
     border: 1px solid black;
     height: 40px;
-    width: 33%; 
+    width: 66%; 
     font-size: 20px;
-    
-
+    margin-top: 200px;
 }
+
+@media screen and (min-width: 700px){
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main {
+        border: 1px solid black; 
+        width: 600px;
+        height: 400px; 
+        padding-top: 80px;
+        display: block;
+        margin: auto;
+        
+        
+    }
+    .quiz {
+        font-size: 40px;
+        margin-top: 1%;
+    }
+    
+    .questionsStart{
+        margin-top: 20px;
+    }
+    button {
+        border: 1px solid black;
+        height: 50px;
+        width: 66%; 
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+})
