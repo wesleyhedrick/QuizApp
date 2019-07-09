@@ -3,32 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Quiz App Question Page</title>
+    <title>Quiz App Tally Page</title>
     <meta name="description" content="Test your knowledge">
     <link href="tally.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    
-    <div class="container">
-        
-        <header>
-            <h1>Monty Python The Quiz</h1>
-            <p>Question 1 of 10</p>
-            <p class="question">Which is the most ferocious animal?</p>
+        <div class="container">
+          <header>
+            <div class="quizName">
+                <h1>Monty Python The Quiz</h1>
+            </div>
+            <div class="progress">
+                <ul>
+                  <li>Question 1 of 10</li>
+                  <li>Score<span>1</span>/<span>1</span></li>
+                </ul>
+                <p class="question">Which is the most ferocious animal?</p>
+            </div>
         </header>
 
         <main>
             <p>You are correct!</p>
             <p>Bunny Rabbit</p>
-            <p>Feedback</p> 
             <p>"It has huge fangs! It jumps about!"</p>
         </main>
-
-        <footer>
-
-        </footer>
-    </div>   
+        <div class="nextQuestionButton">
+          <button>Next Question</button>
+        </div>
+      </div>
   </body>
 </html>
