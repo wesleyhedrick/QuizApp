@@ -13,6 +13,7 @@ function renderLanding(){
 
 
 function renderQuestionPage(event){
+    
     $('main').html(
       `
       <p>Question ${questionNum+1}/10</p>
@@ -58,7 +59,8 @@ function renderResultsPage(){
   console.log($('input:checked').val())
   console.log(questionNum);
 
-
+  $('header').remove();
+  $('main').addClass('results');
   const userAnswer = $('input:checked'); 
   if(userAnswer.val() === QUESTIONBANK[questionNum].correctAnswer){
     tallyScore();
@@ -66,7 +68,9 @@ function renderResultsPage(){
     $('main').html(
             `<p>You are correct!</p>
             <p>${QUESTIONBANK[questionNum].correctAnswer}</p>
+            <br>
             <p>${QUESTIONBANK[questionNum].feedback}</p>
+            <br>
             <p>You\'re score is ${score * 100}</p>
             <button>Next Question</button>
             `);
